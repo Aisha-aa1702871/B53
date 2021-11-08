@@ -1,5 +1,7 @@
 package cmps312.bankingapp.view
 
+import android.os.Build
+import androidx.annotation.RequiresApi
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
@@ -12,6 +14,7 @@ import androidx.navigation.navArgument
 import cmps312.bankingapp.view.account.AccountDetails
 import cmps312.bankingapp.view.transfer.*
 
+@RequiresApi(Build.VERSION_CODES.N)
 @Composable
 fun AppNavigator(navHostController: NavHostController, paddingValues: PaddingValues) {
     NavHost(
